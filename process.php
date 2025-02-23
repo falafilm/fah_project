@@ -3,10 +3,10 @@
 <?php 
 
     // print_r($_POST);
-    $image = $_GET['images'];
-    $problem = $_GET['problem'];
-    $location = $_GET['location'];
-    $name = $_GET['name'];
+    $image = $_POST['images'];
+    $problem = $_POST['problem'];
+    $location = $_POST['location'];
+    $name = $_POST['name'];
 
     mysqli_query($connect, "INSERT INTO communities (images, problem, location, name)
                             VALUE ('$image', '$problem', '$location', '$name')");
