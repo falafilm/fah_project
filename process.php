@@ -3,7 +3,7 @@
 <?php 
 
     // print_r($_POST);
-    $image = $_GE['images'];
+    $image = $_GET['images'];
     $problem = $_GET['problem'];
     $location = $_GET['location'];
     $name = $_GET['name'];
